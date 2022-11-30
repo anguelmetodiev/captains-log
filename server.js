@@ -15,6 +15,11 @@ app.get("/logs/new", (req, res)=>{
     res.render('New')
 })
 
+// Create
+app.post("/logs", (req, res) => {
+    req.body.shipIsBroken = req.body.shipIsBroken === "on" ? true : false;
+    res.send(req.body);
+})
 
 app.listen(PORT,()=>{
     console.log('Running at port:', PORT)
