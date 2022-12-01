@@ -5,13 +5,13 @@ class New extends React.Component {
         return (
             <div>
                 <header>
-                    New
+                    New Page
                 </header>
                 <body>
                     <form action="/logs" method="POST">
                         Title: <input type="text" name="title" /> <br/>
                         Entry: <input type="textarea" name="entry" /> <br/>
-                        Ship is broken: <input type="checkbox" name="shipIsBroken" /> <br/>
+                        shipIsBroken: <input type="checkbox" name="shipIsBroken" /> <br/>
                         <input type="submit" name="submit" value="Submit" />
                     </form>
                 </body>

@@ -1,14 +1,14 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
-const logsSchema = new mongoose.Schema({
+const logSchema = new mongoose.Schema({
     title: { type: String, required: true },
     entry: { type: String, required: true },
-    shipIsBroken: { Boolean, default: true }
+    shipIsBroken: { type: Boolean, default: true}
 },
 {
     timestamps: true
-});
+})
 
-const Log = mongoose.model("Log", logsSchema);
+const Log = mongoose.model("Log", logSchema)
 
-module.exports = Log;
+module.exports = Log
